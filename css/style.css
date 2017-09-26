@@ -1,0 +1,11 @@
+.noresize {
+  resize: none; 
+}
+
+.vresize {
+  resize: vertical; 
+}
+  
+.hresize {
+  resize: horizontal;  
+} 

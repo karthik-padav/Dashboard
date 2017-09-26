@@ -1,0 +1,167 @@
+[
+	{
+		title: "C Interview Questions & Answers	",
+		data: [
+            {
+                id: '1',
+                question : 'How do you construct an increment statement or decrement statement in C?',
+                answer: 'There are actually two ways you can do this. One is to use the increment operator ++ and decrement operator –. For example, the statement “x++” means to increment the value of x by 1. Likewise, the statement “x –” means to decrement the value of x by 1. Another way of writing increment statements is to use the conventional + plus sign or – minus sign. In the case of “x++”, another way to write it is “x = x +1”.'
+            },
+            {
+                id: '2',
+                question : 'What is the difference between Call by Value and Call by Reference?',
+                answer: 'When using Call by Value, you are sending the value of a variable as parameter to a function, whereas Call by Reference sends the address of the variable. Also, under Call by Value, the value in the parameter is not affected by whatever operation that takes place, while in the case of Call by Reference, values can be affected by the process within the function.'
+            },
+            {
+                id: '3',
+                question : 'Some coders debug their programs by placing comment symbols on some codes instead of deleting it. How does this aid in debugging?',
+                answer: 'Placing comment symbols /* */ around a code, also referred to as “commenting out”, is a way of isolating some codes that you think maybe causing errors in the program, without deleting the code. The idea is that if the code is in fact correct, you simply remove the comment symbols and continue on. It also saves you time and effort on having to retype the codes if you have deleted it in the first place.'
+            },
+            {
+                id: '4',
+                question : 'What is a stack?',
+                answer: 'A stack is one form of a data structure. Data is stored in stacks using the FILO (First In Last Out) approach. At any particular instance, only the top of the stack is accessible, which means that in order to retrieve data that is stored inside the stack, those on the upper part should be extracted first. Storing data in a stack is also referred to as a PUSH, while data retrieval is referred to as a POP.'
+            },
+            {
+                id: '5',
+                question : 'What is a sequential access file?',
+                answer: 'When writing programs that will store and retrieve data in a file, it is possible to designate that file into different forms. A sequential access file is such that data are saved in sequential order: one data is placed into the file after another. To access a particular data within the sequential access file, data has to be read one data at a time, until the right one is reached.'
+            },
+            {
+                id: '6',
+                question : 'What is variable initialization and why is it important?',
+                answer: 'This refers to the process wherein a variable is assigned an initial value before it is used in the program. Without initialization, a variable would have an unknown value, which can lead to unpredictable outputs when used in computations or other operations.'
+            },
+            {
+                id: '7',
+                question : 'What is spaghetti programming?',
+                answer: 'Spaghetti programming refers to codes that tend to get tangled and overlapped throughout the program. This unstructured approach to coding is usually attributed to lack of experience on the part of the programmer. Spaghetti programing makes a program complex and analyzing the codes difficult, and so must be avoided as much as possible.'
+            },
+            {
+                id: '8',
+                question : 'Differentiate Source Codes from Object Codes',
+                answer: 'Source codes are codes that were written by the programmer. It is made up of the commands and other English-like keywords that are supposed to instruct the computer what to do. However, computers would not be able to understand source codes. Therefore, source codes are compiled using a compiler. The resulting outputs are object codes, which are in a format that can be understood by the computer processor. In C programming, source codes are saved with the file extension .C, while object codes are saved with the file extension .OBJ'
+            },
+            {
+                id: '9',
+                question : 'In C programming, how do you insert quote characters (‘ and “) into the output screen?',
+                answer: 'This is a common problem for beginners because quotes are normally part of a printf statement. To insert the quote character as part of the output, use the format specifiers \’ (for single quote), and \” (for double quote).'
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+            {
+                id: '',
+                question : '',
+                answer: ''
+            },
+        ]
+	}
+]
