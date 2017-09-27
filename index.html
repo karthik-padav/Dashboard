@@ -23,7 +23,7 @@
 		authDomain: "questionandanswer-96480.firebaseapp.com",
 		databaseURL: "https://questionandanswer-96480.firebaseio.com",
 		projectId: "questionandanswer-96480",
-		storageBucket: "",
+		storageBucket: "questionandanswer-96480.appspot.com",
 		messagingSenderId: "872746634388"
 	  };
 	  firebase.initializeApp(config);
@@ -88,8 +88,10 @@
 
   <div id="menu1" class="tab-pane fade">
     <h3>Menu 1</h3>
-    <p>Some content in menu 1.</p>
+    <progress value="0" max="100" id="uploader">0%</progress>
+    <input type="file" value="upload" id="fileButton" />
   </div>
+  
   <div id="menu2" class="tab-pane fade">
     <h3>Menu 2</h3>
     <p>Some content in menu 2.</p>
