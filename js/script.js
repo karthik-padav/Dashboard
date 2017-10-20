@@ -3,21 +3,44 @@ $(document).ready(function(){
     var question = "";
     var answer = "";
     var qnaAarray = [];
+    $('#html-L').show();
+
+    database.ref('/QnA/html').on("child_added", function(snap){
+        var question = snap.child('question').val();
+        var answer = snap.child('answer').val();
+        var id = snap.child('id').val();
+        qnaAarray.push({
+            'question':question,
+            'answer':answer,
+            'id' :id
+        });
+        $('#html-L').hide();
+        console.log(qnaAarray);
+    });
 
     $('#clickButton').on('click', function(){
-        
+        var totalQnA = qnaAarray.length;
+        if(totalQnA == 0){
+            var id = 1;
+        } else {
+            var id = qnaAarray[totalQnA - 1].id + 1;
+        }
         var QnA = {
             question:$('#question').val(),
-            answer:$('#answer').val()
+            answer:$('#answer').val(),
+            id: id
         }
-        database.ref('/QnA/cPlusPlus').push(QnA, function(error) {
+        database.ref('/QnA/html').push(QnA, function(error) {
         if (error)
             console.log('Error has occured during saving process')
         else
             console.log("Data hss been saved succesfully")
+            console.log(QnA);
+            $('#html-L').hide();
         })
 
     });
+
 
     // File uploader
     var uploader = document.getElementById('uploader');
@@ -52,13 +75,4 @@ $(document).ready(function(){
 
     })
 
-    database.ref('/QnA/cPlusPlus').on("child_added", function(snap){
-        var question = snap.child('question').val();
-        var answer = snap.child('answer').val();
-        qnaAarray.push({
-            'question':question,
-            'answer':answer
-        });
-        console.log(qnaAarray);
-    });
 });
